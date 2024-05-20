@@ -1,0 +1,45 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@layer components {
+
+    .site-preloader {
+        position: fixed;
+        background-color: theme("colors.secondary.700");
+        z-index: 9999;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .site-preloader svg {
+        overflow: visible;
+        height: 300px;
+        width: 300px;
+    }
+
+    .site-preloader svg path#Path_1013 {
+        /* transform: translate(3749.41px, -19701.488px); */
+
+    }
+
+    .site-preloader svg path#Path_1014 {
+        /* transform: translate(5589.433px, -19546.16px); */
+    }
+
+    .text-shadow-black {
+        text-shadow: rgba(0, 0, 0, 1) 0px 0 22px;
+    }
+
+    .text-highlight {
+        box-shadow: inset 0 0px 15px 0 theme("colors.primary.600");
+    }
+
+    .bg-gradianto{
+        background: linear-gradient(0deg, rgba(83,83,83,1) 0%, rgba(170,170,170,1) 50%, rgba(83,83,83,1) 100%);
+    }
+}
