@@ -24,6 +24,21 @@ const config = {
             inject: true,
             filename: 'product-detail.html'
         }),
+        new HtmlWebpackPlugin({
+            template: 'html/blog.html',
+            inject: true,
+            filename: 'blog.html'
+        }),
+        new HtmlWebpackPlugin({
+            template: 'html/blog1.html',
+            inject: true,
+            filename: 'blog1.html'
+        }),
+        new HtmlWebpackPlugin({
+            template: 'html/terms-and-conditions.html',
+            inject: true,
+            filename: 'terms-and-conditions.html'
+        }),
         new CopyWebpackPlugin({
             patterns: [
                 { from: 'public' }
