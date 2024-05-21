@@ -9,3 +9,5 @@ import "./components/menu";
 import "./components/homeblogs";
 import "./components/preloader";
 import "./components/productsSwiper";
+import "./components/relatedBlogs";
+import "./components/tabNavigation";

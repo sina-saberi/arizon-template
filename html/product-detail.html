@@ -219,151 +219,338 @@
         </div>
     </aside>
 
-    <main class="min-h-[3000px] md:pt-32">
+    <main class="md:pt-32 pb-20">
         <section class="flex flex-col lg:flex-row justify-between gap-x-10">
-            <div class="w-full lg:w-[600px] min-h-96 md:pl-12 relative">
+            <div class="w-full lg:w-[600px] md:pl-12 relative">
                 <div class="bg-secondary-300 w-full h-full rounded-md"></div>
                 <div class="w-full h-3/4 bg-white absolute top-2/4 -translate-y-2/4 lg:rounded-l-3xl p-16">
                     <img src="/assets/2020.png" class="h-full mx-auto" />
                 </div>
             </div>
-            <div class="flex flex-col w-full lg:w-[900px] xl:w-[1100px] bg-secondary-300/50 rounded-md text-white p-5">
+            <div
+                class="flex flex-col w-full lg:w-[900px] xl:w-[1100px] bg-secondary-300/50 rounded-md text-white p-5 tab-container">
                 <h1 class="text-2xl">Apple iPhone 13 Pro Max (1TB, Gold)</h1>
                 <ul class=" mt-4 grid grid-cols-2 md:grid-cols-4 sm:max-w-[500px]">
                     <li class="group">
-                        <button
-                            class="w-full border-white border md:group-last:rounded-l-xl md:group-first:rounded-r-xl px-4 py-0.5 aria-selected:bg-gray-50/20 ">معرفی</button>
+                        <button data-tab="0"
+                            class="tab-button w-full border-white border md:group-last:rounded-l-xl md:group-first:rounded-r-xl px-4 py-0.5 aria-selected:bg-gray-50/20 ">معرفی</button>
                     </li>
                     <li class="group">
-                        <button aria-selected="true"
-                            class="w-full border-white border md:group-last:rounded-l-xl md:group-first:rounded-r-xl px-4 py-0.5 aria-selected:bg-gray-50/20 ">بررسی
+                        <button data-tab="1" aria-selected="true"
+                            class="tab-button w-full border-white border md:group-last:rounded-l-xl md:group-first:rounded-r-xl px-4 py-0.5 aria-selected:bg-gray-50/20 ">بررسی
                             تخصصی</button>
                     </li>
                     <li class="group">
-                        <button
-                            class="w-full border-white border md:group-last:rounded-l-xl md:group-first:rounded-r-xl px-4 py-0.5 aria-selected:bg-gray-50/20 ">دیدگاه
+                        <button data-tab="2"
+                            class="tab-button w-full border-white border md:group-last:rounded-l-xl md:group-first:rounded-r-xl px-4 py-0.5 aria-selected:bg-gray-50/20 ">دیدگاه
                             ها</button>
                     </li>
                     <li class="group">
-                        <button
-                            class="w-full border-white border md:group-last:rounded-l-xl md:group-first:rounded-r-xl px-4 py-0.5 aria-selected:bg-gray-50/20 ">پرسش
+                        <button data-tab="3"
+                            class="tab-button w-full border-white border md:group-last:rounded-l-xl md:group-first:rounded-r-xl px-4 py-0.5 aria-selected:bg-gray-50/20 ">پرسش
                             ها</button>
                     </li>
                 </ul>
-                <div class="h-full flex items-end mt-10 gap-x-3">
-                    <ul class="flex flex-col gap-2 h-full">
-                        <li>
-                            <span>
-                                رنگ بدنه
-                            </span>
-                            <span>
-                                : طلایی
-                            </span>
-                        </li>
-                        <li>
-                            <span>
-                                ابعاد
-                            </span>
-                            <span>
-                                : 143.6x70.9x7.7 میلیمتر
-                            </span>
-                        </li>
-                        <li>
-                            <span>
-                                وزن
-                            </span>
-                            <span>
-                                : 174 گرم
-                            </span>
-                        </li>
-                        <li>
-                            <span>
-                                سایز صفحه نمایش
-                            </span>
-                            <span>
-                                : 5.8 اینچ
-                            </span>
-                        </li>
-                        <li>
-                            <span>
-                                نوع صفحه نمایش
-                            </span>
-                            <span>
-                                : OLED-Super Retina
-                            </span>
-                        </li>
-                        <li>
-                            <span>
-                                وضوح صفحه نمایش
-                            </span>
-                            <span>
-                                : ۲۴۳۶ × ۱۱۲۵ پیکسل
-                            </span>
-                        </li>
-                        <li>
-                            <span>
-                                دوربین اصلی
-                            </span>
-                            <span>
-                                : 12 مگاپیکسل
-                            </span>
-                        </li>
-                        <li>
-                            <span>
-                                دوربین سلفی
-                            </span>
-                            <span>
-                                : 8 مگاپیکسل
-                            </span>
-                        </li>
-                        <li>
-                            <span>
-                                فرکانس پردازنده‌ی مرکزی
-                            </span>
-                            <span>
-                                : 6 هسته ای
-                            </span>
-                        </li>
-                        <li>
-                            <span>
-                                وضعیت در انبار
-                            </span>
-                            <span>
-                                : نا موجود
-                            </span>
-                        </li>
-                        <li>
-                            <span>
-                                در صورت شارژ مجدد این محصول به شما اطلاع خواهیم داد
-                            </span>
-                        </li>
-                    </ul>
-                    <input
-                        class="shadow-md border border-secondary-200 bg-gray-50/30 px-4 py-1 rounded-lg placeholder:text-gray-700 placeholder:font-bold"
-                        placeholder="ایمیل خود را وارد نمائید" type="email" />
+                <div class="w-full h-full flex p-5">
+                    <div class="h-full tab-content">
+                        <p class="max-w-96">
+                            گوشی‌های هوشمند خانواده آیفون 13 در قالب چهار گوشی هوشمند آیفون 13 پرو مکس، آیفون 13 پرو،
+                            آیفون 13‌ و آیفون 13 مینی معرفی شدند. پرچمداران جدید اپل این بار قدرتمند‌تر از همیشه پا به
+                            عرصه رقابت گذاشته اند تا در رقابتی بسیار جذاب، عملکردی بهتر به نسبت پرچمداران اندرویدی به
+                            نمایش بگذارد. از جمله اصلی‌ترین تغییرات در نظر گرفته شده برای این گوشی های هوشمند در مقایسه
+                            با پرچمداران خانواده آیفون 12 می‌توانیم به سنسور‌های دوربین قدرتمند‌تر، پردازنده فوق العاده
+                            با عملکرد بهتر و خیره کننده به نسبت نسل قبلی، تنوع رنگی بالا، صفحه نمایش به‌مراتب
+                            با‌کیفیت‌تراشاره کنیم. در این بررسی به‌سراغ آیفون 13 پرو مکس به عنوان گل سرسبد گوشی های
+                            هوشمند این خانواده رفته ایم تا ببینیم چه مشخصاتی را با خودش به همراه داشته و به نسبت آیفون
+                            12 پرو مکس چه تغییرات در مشخصات فنی در نظر گرفته شده دارد
+                        </p>
+                    </div>
+                    <div class="h-full flex items-end gap-x-3 tab-content">
+                        <div class="w-full h-full flex items-end gap-3">
+                            <ul class="flex flex-col gap-2 h-full">
+                                <li>
+                                    <span>
+                                        رنگ بدنه
+                                    </span>
+                                    <span>
+                                        : طلایی
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        ابعاد
+                                    </span>
+                                    <span>
+                                        : 143.6x70.9x7.7 میلیمتر
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        وزن
+                                    </span>
+                                    <span>
+                                        : 174 گرم
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        سایز صفحه نمایش
+                                    </span>
+                                    <span>
+                                        : 5.8 اینچ
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        نوع صفحه نمایش
+                                    </span>
+                                    <span>
+                                        : OLED-Super Retina
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        وضوح صفحه نمایش
+                                    </span>
+                                    <span>
+                                        : ۲۴۳۶ × ۱۱۲۵ پیکسل
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        دوربین اصلی
+                                    </span>
+                                    <span>
+                                        : 12 مگاپیکسل
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        دوربین سلفی
+                                    </span>
+                                    <span>
+                                        : 8 مگاپیکسل
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        فرکانس پردازنده‌ی مرکزی
+                                    </span>
+                                    <span>
+                                        : 6 هسته ای
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        وضعیت در انبار
+                                    </span>
+                                    <span>
+                                        : نا موجود
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        در صورت شارژ مجدد این محصول به شما اطلاع خواهیم داد
+                                    </span>
+                                </li>
+                            </ul>
+                            <input
+                                class="shadow-md border border-secondary-200 bg-gray-50/30 px-4 py-1 rounded-lg placeholder:text-gray-700 placeholder:font-bold"
+                                placeholder="ایمیل خود را وارد نمائید" type="email" />
+                        </div>
+                    </div>
+                    <div class="h-full items-end gap-x-3 tab-content hidden"></div>
+                    <div class="h-full items-end gap-x-3 tab-content hidden"></div>
                 </div>
             </div>
         </section>
 
-        <section class="h-96 bg-secondary-400/50 p-10 mt-16">
+        <section class=" bg-secondary-400/50 p-10 mt-16">
             <div class="container mx-auto">
                 <h2 class="text-3xl font-semibold text-white">محصولات مرتبط</h2>
                 <div class="w-full">
                     <div class="swiper product-swiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">Slide 1</div>
-                            <div class="swiper-slide">Slide 2</div>
-                            <div class="swiper-slide">Slide 3</div>
-                            <div class="swiper-slide">Slide 4</div>
-                            <div class="swiper-slide">Slide 5</div>
-                            <div class="swiper-slide">Slide 6</div>
-                            <div class="swiper-slide">Slide 7</div>
-                            <div class="swiper-slide">Slide 8</div>
-                            <div class="swiper-slide">Slide 8</div>
-                            <div class="swiper-slide">Slide 8</div>
-                            <div class="swiper-slide">Slide 8</div>
-                            <div class="swiper-slide">Slide 9</div>
+                        <div class="swiper-wrapper pb-10 overflow-visible">
+                            <div class="swiper-slide group px-5 pb-5">
+                                <div class="h-[400px] relative flex flex-col justify-end pt-20">
+                                    <div
+                                        class="h-full flex flex-col justify-end border rounded-2xl group-hover:shadow-2xl group-hover:shadow-primary-600 group-hover:border-primary-600 bg-secondary-300/30 shadow-lg">
+                                        <div class="w-full bg-white h-full rounded-t-2xl relative">
+                                            <img src="/assets/2020.png"
+                                                class="w-64 pb-5 absolute bottom-0 left-2/4 -translate-x-2/4 " />
+                                        </div>
+                                        <div class="flex-shrink-0 flex justify-center items-end py-5 px-5">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi accusantium
+                                            deleniti est,
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide group px-5 pb-5">
+                                <div class="h-[400px] relative flex flex-col justify-end pt-20">
+                                    <div
+                                        class="h-full flex flex-col justify-end border rounded-2xl group-hover:shadow-2xl group-hover:shadow-primary-600 group-hover:border-primary-600 bg-secondary-300/30 shadow-lg">
+                                        <div class="w-full bg-white h-full rounded-t-2xl relative">
+                                            <img src="/assets/2020.png"
+                                                class="w-64 pb-5 absolute bottom-0 left-2/4 -translate-x-2/4 " />
+                                        </div>
+                                        <div class="flex-shrink-0 flex justify-center items-end py-5 px-5">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi accusantium
+                                            deleniti est,
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide group px-5 pb-5">
+                                <div class="h-[400px] relative flex flex-col justify-end pt-20">
+                                    <div
+                                        class="h-full flex flex-col justify-end border rounded-2xl group-hover:shadow-2xl group-hover:shadow-primary-600 group-hover:border-primary-600 bg-secondary-300/30 shadow-lg">
+                                        <div class="w-full bg-white h-full rounded-t-2xl relative">
+                                            <img src="/assets/2020.png"
+                                                class="w-64 pb-5 absolute bottom-0 left-2/4 -translate-x-2/4 " />
+                                        </div>
+                                        <div class="flex-shrink-0 flex justify-center items-end py-5 px-5">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi accusantium
+                                            deleniti est,
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide group px-5 pb-5">
+                                <div class="h-[400px] relative flex flex-col justify-end pt-20">
+                                    <div
+                                        class="h-full flex flex-col justify-end border rounded-2xl group-hover:shadow-2xl group-hover:shadow-primary-600 group-hover:border-primary-600 bg-secondary-300/30 shadow-lg">
+                                        <div class="w-full bg-white h-full rounded-t-2xl relative">
+                                            <img src="/assets/2020.png"
+                                                class="w-64 pb-5 absolute bottom-0 left-2/4 -translate-x-2/4 " />
+                                        </div>
+                                        <div class="flex-shrink-0 flex justify-center items-end py-5 px-5">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi accusantium
+                                            deleniti est,
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide group px-5 pb-5">
+                                <div class="h-[400px] relative flex flex-col justify-end pt-20">
+                                    <div
+                                        class="h-full flex flex-col justify-end border rounded-2xl group-hover:shadow-2xl group-hover:shadow-primary-600 group-hover:border-primary-600 bg-secondary-300/30 shadow-lg">
+                                        <div class="w-full bg-white h-full rounded-t-2xl relative">
+                                            <img src="/assets/2020.png"
+                                                class="w-64 pb-5 absolute bottom-0 left-2/4 -translate-x-2/4 " />
+                                        </div>
+                                        <div class="flex-shrink-0 flex justify-center items-end py-5 px-5">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi accusantium
+                                            deleniti est,
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide group px-5 pb-5">
+                                <div class="h-[400px] relative flex flex-col justify-end pt-20">
+                                    <div
+                                        class="h-full flex flex-col justify-end border rounded-2xl group-hover:shadow-2xl group-hover:shadow-primary-600 group-hover:border-primary-600 bg-secondary-300/30 shadow-lg">
+                                        <div class="w-full bg-white h-full rounded-t-2xl relative">
+                                            <img src="/assets/2020.png"
+                                                class="w-64 pb-5 absolute bottom-0 left-2/4 -translate-x-2/4 " />
+                                        </div>
+                                        <div class="flex-shrink-0 flex justify-center items-end py-5 px-5">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi accusantium
+                                            deleniti est,
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide group px-5 pb-5">
+                                <div class="h-[400px] relative flex flex-col justify-end pt-20">
+                                    <div
+                                        class="h-full flex flex-col justify-end border rounded-2xl group-hover:shadow-2xl group-hover:shadow-primary-600 group-hover:border-primary-600 bg-secondary-300/30 shadow-lg">
+                                        <div class="w-full bg-white h-full rounded-t-2xl relative">
+                                            <img src="/assets/2020.png"
+                                                class="w-64 pb-5 absolute bottom-0 left-2/4 -translate-x-2/4 " />
+                                        </div>
+                                        <div class="flex-shrink-0 flex justify-center items-end py-5 px-5">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi accusantium
+                                            deleniti est,
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide group px-5 pb-5">
+                                <div class="h-[400px] relative flex flex-col justify-end pt-20">
+                                    <div
+                                        class="h-full flex flex-col justify-end border rounded-2xl group-hover:shadow-2xl group-hover:shadow-primary-600 group-hover:border-primary-600 bg-secondary-300/30 shadow-lg">
+                                        <div class="w-full bg-white h-full rounded-t-2xl relative">
+                                            <img src="/assets/2020.png"
+                                                class="w-64 pb-5 absolute bottom-0 left-2/4 -translate-x-2/4 " />
+                                        </div>
+                                        <div class="flex-shrink-0 flex justify-center items-end py-5 px-5">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi accusantium
+                                            deleniti est,
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide group px-5 pb-5">
+                                <div class="h-[400px] relative flex flex-col justify-end pt-20">
+                                    <div
+                                        class="h-full flex flex-col justify-end border rounded-2xl group-hover:shadow-2xl group-hover:shadow-primary-600 group-hover:border-primary-600 bg-secondary-300/30 shadow-lg">
+                                        <div class="w-full bg-white h-full rounded-t-2xl relative">
+                                            <img src="/assets/2020.png"
+                                                class="w-64 pb-5 absolute bottom-0 left-2/4 -translate-x-2/4 " />
+                                        </div>
+                                        <div class="flex-shrink-0 flex justify-center items-end py-5 px-5">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi accusantium
+                                            deleniti est,
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide group px-5 pb-5">
+                                <div class="h-[400px] relative flex flex-col justify-end pt-20">
+                                    <div
+                                        class="h-full flex flex-col justify-end border rounded-2xl group-hover:shadow-2xl group-hover:shadow-primary-600 group-hover:border-primary-600 bg-secondary-300/30 shadow-lg">
+                                        <div class="w-full bg-white h-full rounded-t-2xl relative">
+                                            <img src="/assets/2020.png"
+                                                class="w-64 pb-5 absolute bottom-0 left-2/4 -translate-x-2/4 " />
+                                        </div>
+                                        <div class="flex-shrink-0 flex justify-center items-end py-5 px-5">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi accusantium
+                                            deleniti est,
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide group px-5 pb-5">
+                                <div class="h-[400px] relative flex flex-col justify-end pt-20">
+                                    <div
+                                        class="h-full flex flex-col justify-end border rounded-2xl group-hover:shadow-2xl group-hover:shadow-primary-600 group-hover:border-primary-600 bg-secondary-300/30 shadow-lg">
+                                        <div class="w-full bg-white h-full rounded-t-2xl relative">
+                                            <img src="/assets/2020.png"
+                                                class="w-64 pb-5 absolute bottom-0 left-2/4 -translate-x-2/4 " />
+                                        </div>
+                                        <div class="flex-shrink-0 flex justify-center items-end py-5 px-5">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi accusantium
+                                            deleniti est,
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mx-auto max-w-sm lg:max-w-4xl mt-10">
+            <div class="swiper related-blogs">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide rounded-xl overflow-hidden">
+                        <img class="w-full" src="/assets/Image 7.png" />
+                    </div>
+                    <div class="swiper-slide rounded-xl overflow-hidden">
+                        <img class="w-full" src="/assets/Image 7.png" />
                     </div>
                 </div>
             </div>
