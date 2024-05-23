@@ -39,6 +39,11 @@ const config = {
             inject: true,
             filename: 'terms-and-conditions.html'
         }),
+        new HtmlWebpackPlugin({
+            template: 'html/contact-us.html',
+            inject: true,
+            filename: 'contact-us.html'
+        }),
         new CopyWebpackPlugin({
             patterns: [
                 { from: 'public' }
