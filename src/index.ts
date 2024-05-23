@@ -11,3 +11,4 @@ import "./components/preloader";
 import "./components/productsSwiper";
 import "./components/relatedBlogs";
 import "./components/tabNavigation";
+import "./components/comments-swiper";
