@@ -35,6 +35,11 @@ const config = {
             filename: 'blog1.html'
         }),
         new HtmlWebpackPlugin({
+            template: 'html/blog2.html',
+            inject: true,
+            filename: 'blog2.html'
+        }),
+        new HtmlWebpackPlugin({
             template: 'html/terms-and-conditions.html',
             inject: true,
             filename: 'terms-and-conditions.html'
@@ -43,6 +48,33 @@ const config = {
             template: 'html/contact-us.html',
             inject: true,
             filename: 'contact-us.html'
+        }),
+        new HtmlWebpackPlugin({
+            template: 'html/about-us.html',
+            inject: true,
+            filename: 'about-us.html'
+        }),
+        new HtmlWebpackPlugin({
+            template: 'html/Branches-and-representatives.html',
+            inject: true,
+            filename: 'Branches-and-representatives.html'
+        }),
+        new HtmlWebpackPlugin({
+            template: 'html/service-time.html',
+            inject: true,
+            filename: 'service-time.html'
+        }),
+        new HtmlWebpackPlugin({
+            template: 'html/device-registry.html',
+            inject: true,
+            filename: 'device-registry.html'
+            
+        }),
+        new HtmlWebpackPlugin({
+            template: 'html/1920.html',
+            inject: true,
+            filename: '1920.html'
+            
         }),
         new CopyWebpackPlugin({
             patterns: [
