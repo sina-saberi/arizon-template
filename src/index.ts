@@ -12,3 +12,4 @@ import "./components/productsSwiper";
 import "./components/relatedBlogs";
 import "./components/tabNavigation";
 import "./components/comments-swiper";
+import "./components/about-us";
