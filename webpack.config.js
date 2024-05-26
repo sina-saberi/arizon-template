@@ -55,9 +55,9 @@ const config = {
             filename: 'about-us.html'
         }),
         new HtmlWebpackPlugin({
-            template: 'html/Branches-and-representatives.html',
+            template: 'html/branches-and-representatives.html',
             inject: true,
-            filename: 'Branches-and-representatives.html'
+            filename: 'branches-and-representatives.html'
         }),
         new HtmlWebpackPlugin({
             template: 'html/service-time.html',
@@ -68,13 +68,26 @@ const config = {
             template: 'html/device-registry.html',
             inject: true,
             filename: 'device-registry.html'
-            
         }),
         new HtmlWebpackPlugin({
-            template: 'html/1920.html',
+            template: 'html/branches-and-representatives-1.html',
             inject: true,
-            filename: '1920.html'
-            
+            filename: 'branches-and-representatives-1.html'
+        }),
+        new HtmlWebpackPlugin({
+            template: 'html/follow-up-repairs.html',
+            inject: true,
+            filename: 'follow-up-repairs.html'
+        }),
+        new HtmlWebpackPlugin({
+            template: 'html/follow-up-repairs-1.html',
+            inject: true,
+            filename: 'follow-up-repairs-1.html'
+        }),
+        new HtmlWebpackPlugin({
+            template: 'html/device-warranty.html',
+            inject: true,
+            filename: 'device-warranty.html'
         }),
         new CopyWebpackPlugin({
             patterns: [
