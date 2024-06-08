@@ -122,7 +122,7 @@ const config = {
     devServer: {
         watchFiles: ["html/", "src/"],
         static: path.resolve(__dirname, 'public'),
-        port: 4000,
+        port: 3000,
         open: true,
         hot: true,
     },

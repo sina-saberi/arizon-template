@@ -54,7 +54,7 @@ const container = "site-preloader";
             duration: .3,
             ease: "power1.inOut",
             onComplete: () => {
-                document.body.removeChild(elm);
+                elm.remove()
             }
         });
 })()
